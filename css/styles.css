@@ -200,3 +200,17 @@ a{
         font-size: 1.5rem;
     }
 }
+
+/* Inputs */
+.input{
+    border: 1px solid rgb(203, 200, 200);
+    padding: 1.5rem 3.5rem;
+    border-radius: 40px;
+    outline: 0;
+    color: var(--color-heading);
+    font-size: 2rem;
+}
+::placeholder{
+    font-size: 1.8rem;
+    color: rgb(203, 200, 200);
+}

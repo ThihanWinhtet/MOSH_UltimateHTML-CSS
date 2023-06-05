@@ -214,3 +214,13 @@ a{
     font-size: 1.8rem;
     color: rgb(203, 200, 200);
 }
+.input-group{
+    border: 1px solid rgb(203, 200, 200);
+    border-radius: 40px;
+    display: flex;
+}
+.input-group .input{
+    border: 0;
+    flex-grow: 1;
+    padding: .5rem 1rem;
+}

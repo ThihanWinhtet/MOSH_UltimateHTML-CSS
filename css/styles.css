@@ -4,6 +4,7 @@
     --color-essential : #ff3400;
     --color-heading : #1b0760;
     --color-body : #918ca4;
+    --color-body-darker : #5c5577;
 }
 *, *::after, *::before{
     box-sizing: border-box;
@@ -291,4 +292,18 @@ a{
     .plan__price{ font-size: 5rem;}
     .plan__price{ font-size: 4rem;}
     .plan__description{ font-size: 1.6rem;}
+}
+
+/* Medai */
+.media{
+    display: flex;
+}
+.media__title{
+    margin: 0;
+}
+.media__image{
+    margin-top: .5rem;
+}
+.media__body{
+    margin: 0 2rem;
 }

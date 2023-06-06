@@ -138,6 +138,9 @@ a{
 .icon--primary{
     fill: var(--color-primary);
 }
+.icon--white{
+    fill: white;
+}
 .icon-container{
     background-color: #f3f9fa;
     height: 64px;
@@ -146,6 +149,12 @@ a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+.icon-container--accent{
+    background-color: var(--color-essential);
+}
+.icon--small{
+    height: 30px;
 }
 
 /* Buttons */
@@ -340,5 +349,81 @@ a{
     }
     .quote__organization{
         font-size: 1.4rem;
+    }
+}
+/* Grid */
+.grid{
+    display: grid;
+}
+@media screen and (min-width:900px) {
+    .grid--1x2{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (min-width:1024px) {
+    .grid--1x3{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+/* Testiomonial */
+.testimonial{
+    padding: 3rem;
+}
+.testimonial__image{
+    position: relative;
+}
+.testimonial__image > img{
+    width: 100%;
+}
+.testimonial__image > .icon-container{
+    position: absolute;
+    top: 2rem;
+    right: -32px;
+}
+
+@media screen and (min-width:768px) {
+    .testimonial .quote, 
+    .testimonial .quote__author{
+        font-size: 2.4rem;
+    }
+    .testimonial .quote{
+        margin-left: 6rem;
+    }
+}
+
+/* Callout */
+.callout{
+    color: white;
+    padding: 3rem;
+}
+.callout--primary{
+    background-color: var(--color-primary);
+    color: white;
+}
+.callout__content{
+    text-align: center;
+}
+.callout__content > p{
+    color: white;
+}
+.callout__heading{
+    color: white;
+    margin-top: 0;
+    font-size: 3rem;
+}
+.callout .btn{
+    justify-self: center;
+    align-self: center;
+}
+@media screen and (min-width:768px) {
+    .callout .grid--1x2{
+        grid-template-columns: 1fr auto;
+    }
+    .callout__content{
+        text-align: left;
+    }
+    .callout .btn{
+        justify-self: start;
+        margin-left: 3rem;
     }
 }
